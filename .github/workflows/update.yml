@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: ${{ github.repository_owner }}/vuln-list
-        token: ${{ secrets.ORG_REPO_TOKEN }}
+        token: ${{ secrets.PAT }}
         path: ${{ env.VULN_LIST_DIR }}
 
     - name: Setup github user email and name
